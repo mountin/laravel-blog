@@ -30,15 +30,16 @@
                             <table class="table table-borderless">
                                 <thead>
                                     <tr>
-                                        <th>ID</th><th>Title</th><th>Content</th><th>Category</th><th>Actions</th>
+                                        <th>ID</th><th>Title</th><th>Content</th><th>Actions</th>
                                     </tr>
                                 </thead>
                                 <tbody>
                                 @foreach($posts as $item)
                                     <tr>
-                                        <td>{{ $item->id }}</td>
-                                        <td>{{ $item->title }}</td><td>{{ $item->content }}</td><td>{{ $item->category }}</td>
-                                        <td>
+                                        <td style="width: 5%">{{ $item->id }}</td>
+                                        <td style="width: 15%">{{ $item->title }}</td>
+                                        <td style="width: 50%">{{ $item->content }}</td>
+                                        <td style="width: 35%">
                                             <a href="{{ url('/admin/posts/' . $item->id) }}" title="View Post"><button class="btn btn-info btn-xs"><i class="fa fa-eye" aria-hidden="true"></i> View</button></a>
                                             <a href="{{ url('/admin/posts/' . $item->id . '/edit') }}" title="Edit Post"><button class="btn btn-primary btn-xs"><i class="fa fa-pencil-square-o" aria-hidden="true"></i> Edit</button></a>
                                             {!! Form::open([

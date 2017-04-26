@@ -27,7 +27,7 @@ class PostsController extends Controller
                 ->orWhere('category', 'LIKE', "%$keyword%")
                 ->paginate($perPage);
         } else {
-            $posts = Post::paginate($perPage);
+            $posts = Post::orderBy('created_at', 'desc')->paginate($perPage);
         }
 
         return view('admin.posts.index', compact('posts'));
