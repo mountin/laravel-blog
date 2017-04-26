@@ -1,0 +1,19 @@
+{
+   "fields": [
+        {
+            "name": "title",
+            "type": "string"
+        },
+        {
+            "name": "content",
+            "type": "text"
+        },
+        {
+            "name": "category",
+            "type": "select",
+            "options": ["technology", "tips", "health"]
+        }
+   ]
+}
+
+
