@@ -46,7 +46,8 @@ class PostsController extends Controller
      * Copy of image to local (server) disk
      * create a random image name in numeric format
      * gets data from Illuminate\Support\Facades\Input
-     *
+     * @return New file name OR null
+     * @throws \Exception
      *
      */
     private function copyImage(){
