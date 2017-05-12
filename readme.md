@@ -1,4 +1,4 @@
-[! Origin DEMO is here http://kvartirka2.com/blog ]
+The BLOG DEMO is here http://kvartirka2.com/blog ]
 
 # Laravel PHP Framework
 
